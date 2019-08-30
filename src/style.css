@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: '微软雅黑', 'sans-serif';
+  font-size: 16px;
+}
+
+.chat-w {
+  width: 600px;
+  height: 550px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+}
+
+.chat-container {
+  width: 70%;
+  height: 100%;
+  border-right: 1px solid #ccc;
+}
+
+.user-bar {
+  width: 30%;
+  height: 100%;
+}
+
+.chat-content,
+.tool-bar,
+.print,
+.user-num {
+  border-bottom: 1px solid #ccc;
+}
+
+.chat-content {
+  height: 65%;
+  overflow: auto;
+  padding: 5px;
+  padding-top: 0;
+}
+
+.tool-bar {
+  height: 5%;
+}
+
+.print {
+  height: 23%;
+  overflow: hidden;
+}
+
+.print .print-textarea {
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+.user-num {
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  height: 90%;
+  overflow: auto;
+}
+
+.btn-bar {
+  height: 7%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn-bar button {
+  padding: 1px 10px;
+  margin-right: 10px;
+  border: 1px solid #888;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-bar button:hover {
+  background: rgba(0, 0, 0, .1);
+}
+
+/* 滚动条 */
+.print-textarea::-webkit-scrollbar,
+.chat-content::-webkit-scrollbar,
+.user-info::-webkit-scrollbar {
+  width: 5px;
+}
+
+.print-textarea::-webkit-scrollbar-track,
+.chat-content::-webkit-scrollbar-track,
+.user-info::-webkit-scrollbar-track {
+  background: rgba(239, 239, 239, 0.5);
+  border-radius: 2px;
+}
+
+.print-textarea::-webkit-scrollbar-thumb,
+.chat-content::-webkit-scrollbar-thumb,
+.user-info::-webkit-scrollbar-thumb {
+  background: #bfbfbf;
+}
+
+.print-textarea::-webkit-scrollbar-thumb:hover,
+.chat-content::-webkit-scrollbar-thumb:hover,
+.user-info::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+.chat-list > li {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.chat-list li > *:first-child {
+  display: inline-block;
+  padding: 0px 10px;
+  background: rgba(0,0,0,.02);
+  color: #888;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.chat-list .system {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chat-list .system > *:nth-child(2) {
+  display: inline-block;
+  padding: 0px 10px;
+  background: rgba(0,0,0,.1);
+  color: #000;
+  border-radius: 15px;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.com-name {
+  font-size: 12px;
+  margin-bottom: 3px;
+  color: #888;
+}
+
+.com-tx {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000000;
+  flex-shrink: 0;
+}
+
+.com-chat {
+  width: 334px;
+  padding: 5px;
+  margin: 0 5px;
+  background: rgba(0,0,0,.1);
+}
+
+.me-said .me-name {
+  text-align: right;
+}
+
+.me-said .me-info {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.me-said .me-chat,
+.other-said .other-name,
+.other-said .other-chat {
+  text-align: left;
+}
+
+.other-said .other-info {
+  display: flex;
+  justify-content: flex-start;
+}

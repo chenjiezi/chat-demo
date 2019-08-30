@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <div class="chat-w">
+    <div class="chat-container">
+      <div class="chat-content">
+        <ul class="chat-list" id="chat-list">
+          <li class="system">
+            <span>00:00:00</span>
+            <span>asdasd</span>
+          </li>
+          <li class="system">
+            <span>00:00:00</span>
+            <span>asdasd</span>
+          </li>
+          <li class="me-said">
+            <span>00:00:00</span>
+            <div class="me-w">
+              <div class="com-name me-name">我就是个弟弟</div>
+              <div class="me-info">
+                <div class="com-chat me-chat">
+                  啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                </div>
+                <div class="com-tx me-tx"></div>
+              </div>
+            </div>
+          </li>
+          <li class="other-said">
+            <span>00:00:00</span>
+            <div class="other-w">
+              <div class="com-name other-name">我就是个弟弟1</div>
+              <div class="other-info">
+                <div class="com-tx other-tx"></div>
+                <div class="com-chat other-chat">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem magni officia iure,
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="tool-bar">tool-bar</div>
+      <div class="print">
+        <textarea class="print-textarea" id="print" cols="30" rows="10"></textarea>
+      </div>
+      <div class="btn-bar">
+        <button id="send">发送</button>
+        <button id="close">关闭</button>
+      </div>
+    </div>
+    <div class="user-bar">
+      <div class="user-num">XXX <b id="user-num">0</b> </div>
+      <div class="user-info" id="user-info">
+        XXX
+      </div>
+    </div>
+  </div>
+  <script src="./node_modules/_jquery@3.4.1@jquery/dist/jquery.min.js"></script>
+  <script>
+    console.log($('body'))
+  </script>
+</body>
+
+</html>
