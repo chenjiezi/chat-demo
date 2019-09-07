@@ -5,11 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./favicon.ico" />
   <title>Document</title>
-  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
+  <div class="login-w" id="layer">
+    <div class="login-ww">
+      <h2>XXXXXXXXXXXXXX</h2>
+      <input type="text" id="nickname" placeholder="your name~" autocomplete="off">
+      <button id="login">登录</button>
+    </div>
+  </div>
   <div class="chat-w">
     <div class="chat-container">
       <div class="chat-content">
@@ -64,10 +72,10 @@
       </div>
     </div>
   </div>
+  <!-- 全局加载 -->
+  <script src="/socket.io/socket.io.js"></script>
   <script src="./node_modules/_jquery@3.4.1@jquery/dist/jquery.min.js"></script>
-  <script>
-    console.log($('body'))
-  </script>
+  <script src="./src/js/index.js"></script>
 </body>
 
 </html>

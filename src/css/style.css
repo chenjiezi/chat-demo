@@ -7,7 +7,59 @@
 body {
   font-family: '微软雅黑', 'sans-serif';
   font-size: 16px;
+  background: rgba(0,0,0,.1);
 }
+.login-w {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.8);
+}
+.login-ww {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  height: 270px;
+  background: #fff;
+  overflow: hidden;
+}
+.login-ww > * {
+  display: block;
+  margin: 0 auto;
+  margin-top: 38px;
+  user-select: none;
+}
+.login-ww h2 {
+  text-align: center;
+}
+
+.login-ww input {
+  width: 220px;
+  padding: 8px 5px;
+  outline: none;
+}
+
+.login-ww button {
+  padding: 5px 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-ww button:hover {
+  background: rgba(0,0,0,.05);
+}
+
+.login-ww button:active {
+  background: rgba(0,0,0,.1);
+}
+
 
 .chat-w {
   width: 600px;
